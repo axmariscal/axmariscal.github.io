@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
-        $(function(){
-           alert("My First jQuery Test");
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#testButton").click(function() {
+                alert("Button was clicked!");
+            });
         });
-     </script>
+    </script>
 
     <title>Professional Portfolio | Mariscal</title>
 </head>
@@ -35,7 +38,8 @@
                 <h5><span id="timezone"></span></h5>
                 <p><span id="utc_offset">Test</span><span id="abbreviation"></span></p>
             </div>
-            <button class="btn">Contact</button>
+            <button class="btn" id="testButton">Contact</button>
+            
         </div>
 
     </nav>
