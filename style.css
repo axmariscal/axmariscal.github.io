@@ -123,9 +123,9 @@ body{
 }
 
 .hero__image{
-    width: 340px;
-    height: 340px;
-    border-radius: 30px;
+    width: 280px;
+    height: 300px;
+    border-radius: 10%;
 }
 
 .hero__content h2{
