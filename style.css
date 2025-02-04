@@ -20,6 +20,11 @@ body{
     background: #f3f4f6;
 }
 
+body.dark-mode{
+    background: #121212;
+    color: #fff;
+}
+
 .btn{
     border: 2px solid #1f2937;
     background: #1f2937;
@@ -187,6 +192,7 @@ body{
     border-radius: 50%;
     transition: all 0.5s ease;
 }
+
 
 .skills{
     padding: 60px;
@@ -711,5 +717,6 @@ body{
         flex-direction: column-reverse;
         gap: 16px;
     }
+
 
 }
