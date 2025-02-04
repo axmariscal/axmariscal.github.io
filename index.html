@@ -41,8 +41,9 @@
 
         <div class="navbar__actions">
             <div class="navbar__location">
-                <h5><span id="timezone"></span></h5>
-                <p><span id="utc_offset"></span><span id="abbreviation"></span></p>
+                <i class="ri-earth-line"></i>
+                <span>Los Angeles PST - </span>
+                <span id="time"></span>
             </div>
             <button class="btn" id="testButton">Contact</button>
             
@@ -65,6 +66,8 @@
                 <button id="dmToggle" class="btn">Toggle Dark Mode</button>
                 <button class="btn btn--secondary">See My Portfolio</button>
             </div>
+            <div id ="timezone" style = "visibility: hidden;"></div>
+            <div id="utc-offset" style = "visibility: hidden;"></div>
         </div>
 
         <div class="hero__socials">
