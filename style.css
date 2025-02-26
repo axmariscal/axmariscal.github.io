@@ -18,11 +18,59 @@ img{
 
 body{
     background: #f3f4f6;
+    transition: background 0.75s ease, color 0.75s ease;
 }
 
 body.dark-mode{
     background: #121212;
     color: #fff;
+}
+
+body.dark-mode .navbar__link,
+body.dark-mode .navbar__logo,
+body.dark-mode .navbar__location span,
+body.dark-mode .navbar__location i{
+    color: #fff;
+}
+
+body.dark-mode .footer,
+body.dark-mode .footer__brand a,
+body.dark-mode .footer__links a{
+    color: #ebebeb;
+}
+
+body.dark-mode .navbar__actions .btn{
+    border-color: #fff;
+    color: #fff;
+}
+
+body.dark-mode .navbar__actions .btn:hover{
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+body.dark-mode .showcase__header{
+    border-color: #000;
+    color: #000;
+}
+
+body.dark-mode .category__title{
+    color: #000;
+}
+
+body.dark-mode .skill__info{
+    color: #000;
+}
+
+body.dark-mode .hero__socials a{
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+body.dark-mode .navbar__location{
+    color: #fff;
+    transition: all 0.5s ease;
 }
 
 .btn{
@@ -65,6 +113,7 @@ body.dark-mode{
     align-items: center;
     font-weight: 500;
     gap: 10px;
+    transition: all 0.5s ease;
 }
 
 .navbar__logo i{
@@ -81,8 +130,7 @@ body.dark-mode{
 .footer__links a{
     font-size: 14px;
     font-weight: 500;
-    transition: all 0.5s ease;
-}
+    transition: all 0.5s ease;}
 
 .navbar__link:hover,
 .footer__links a:hover{
@@ -99,11 +147,13 @@ body.dark-mode{
     font-weight: 500;
     color: #6b7280;
     font-size: 12px;
+    transition: all 0.5s ease;
 }
 
 .navbar__location p{
     font-size: 11px;
     font-weight: 600;
+    transition: all 0.5s ease;
 }
 
 .navbar__actions .btn{
