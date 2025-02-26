@@ -600,7 +600,7 @@ function restartGame() {
             grounded: false,
             patrolDistance: 200,
             startX: platformX + Math.random() * 200,
-            jumpPower: -8,
+            jumpPower: -9,
             thinkTimer: 0,
             thinkDelay: Math.random() * 60 + 30,
             canJump: true
