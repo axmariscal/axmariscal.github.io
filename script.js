@@ -15,6 +15,24 @@ document.addEventListener("DOMContentLoaded", function() {
   updateTimezone();
   // Update the time every second
   setInterval(updateTime, 1000);
+
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const menu = document.querySelector('.navbar__menu');
+  
+  hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+      if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+          hamburger.classList.remove('active');
+          menu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+      }
+  });
 });
 
 function updateTimezone() {
